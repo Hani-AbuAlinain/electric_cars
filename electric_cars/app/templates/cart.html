@@ -1,0 +1,163 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{#        <h1>#}
+{#            {{ cart.get_status_display }}#}
+{#        </h1>#}
+
+{#        {% for cart_line in cart.cartline_set.all %}#}
+{#            <tr>#}
+{#                <td>{{ cart_line.product.name }}</td>#}
+{#                <td>{{ cart_line.product.model }}</td>#}
+{#                <td>{{ cart_line.product.price }} Jd</td>#}
+{#                <td>{{ cart_line.product.color }}</td>#}
+{#                <td>{{ cart_line.product.manufacturing_year }}</td>#}
+{#                <td>{{ cart_line.quantity }}</td>#}
+{#                <td>#}
+{#                    <button class="btn btn-danger">Delete</button>#}
+{#                </td>#}
+{##}
+{#            </tr>#}
+{#        {% endfor %}#}
+
+
+
+
+    {#    -------------------------------------------------------------         #}
+
+    <!-- Start Banner Area -->
+    <section class="banner-area organic-breadcrumb">
+        <div class="container">
+            <div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
+                <div class="col-first">
+                    <h1>Shopping Cart</h1>
+                    <nav class="d-flex align-items-center">
+                        <a href="{% url 'index' %}">Home<span class="lnr lnr-arrow-right"></span></a>
+                        <a href="category.html">Cart</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Banner Area -->
+
+    <!--================Cart Area =================-->
+    <section class="cart_area">
+        <div class="container">
+            <div class="cart_inner">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">Product</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Total</th>
+                            <th scope="col">Action</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for cart_line in cart.cartline_set.all %}
+                            <tr>
+                                <td>
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <div class="d-flex">
+                                            </div>
+                                            <p>{{ cart_line.product.name }}
+                                                - {{ cart_line.product.model }} {{ cart_line.product.manufacturing_year }}</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <h5>{{ cart_line.product.price }}</h5>
+                                </td>
+                                <td>
+                                    <div class="product_count">
+                                        <input type="text" name="qty" id="sst" maxlength="12"
+                                               value="{{ cart_line.quantity }}" title="Quantity:"
+                                               class="input-text qty" readonly>
+                                    </div>
+                                </td>
+                                <td>
+                                    <h5>$Toatal</h5>
+                                </td>
+                                <td>
+                                    <h5><button class="btn btn-danger mr-3">Delete</button></h5>
+                                </td>
+                            </tr>
+                        {% endfor %}
+{#                        <tr class="bottom_button">#}
+{#                            <td>#}
+{#                                <a class="gray_btn" href="#">Update Cart</a>#}
+{#                            </td>#}
+{#                            <td>#}
+{##}
+{#                            </td>#}
+{#                            <td>#}
+{##}
+{#                            </td>#}
+{#                            <td>#}
+{##}
+{#                            </td>#}
+{##}
+{#                            <td>#}
+{#                                <div class="cupon_text d-flex align-items-center">#}
+{#                                    <input type="text" placeholder="Coupon Code">#}
+{#                                    <a class="primary-btn" href="#">Apply</a>#}
+{#                                    <a class="gray_btn" href="#">Close Coupon</a>#}
+{#                                </div>#}
+{#                            </td>#}
+{##}
+{#                        </tr>#}
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+
+                            </td>
+{#                            <td>#}
+{#                                <h5>Subtotal</h5>#}
+{#                            </td>#}
+{#                            <td>#}
+{#                                <h5>$2160.00</h5>#}
+{#                            </td>#}
+                        </tr>
+                        <tr class="out_button_area">
+                            <td>
+
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                                <div class="checkout_btn_inner d-flex align-items-center">
+{#                                    <a class="gray_btn" href="#">Continue Shopping</a>#}
+                                    <a class="primary-btn" href="{% url 'purchaseproduct' %}">Proceed to checkout</a>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================End Cart Area =================-->
+
+
+
+
+{% endblock %}

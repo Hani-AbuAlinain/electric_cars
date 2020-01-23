@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+    <h1> card line page </h1>
+
+
+    {% for product in products %}
+
+        <div> {{ product.name }} </div>
+        <div> {{ product.model }} </div>
+        <div> {{ product.price }} </div>
+        <div> {{ product.color }} </div>
+        <div> {{ product.manufacturing_year }} </div>
+        <div> {{ product.max_speed }} </div>
+        <div> {{ product.km_per_charge }} </div>
+        <div> {{ product.description }} </div>
+        <div> {{ product.id }} </div>
+        <hr/>
+
+
+    {% endfor %}
+
+
+{% endblock %}

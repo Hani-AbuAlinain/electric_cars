@@ -1,0 +1,246 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+    {% if request.user.is_authenticated and request.user.is_staff %}
+        <!-- Start Banner Area -->
+        <section class="banner-area organic-breadcrumb">
+            <div class="container">
+                <div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
+                    <div class="col-first">
+                        <h1>Dashboard</h1>
+                        <nav class="d-flex align-items-center">
+                            <a href="{% url 'index' %}">Home<span class="lnr lnr-arrow-right"></span></a>
+                            <a href=""> Dashboard </a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Banner Area -->
+
+
+        <section class="">
+            <!-- single product slide -->
+            <div class="single-product-slider">
+                <div class="container">
+                    <div class="col-10 mt-5"></div>
+                    <div class="col-2 float-right">
+                        <div><a href="{% url 'addproduct' %}" class="btn btn-primary mt-5"><span
+                                class="lnr lnr-plus-circle"> add product </span></a></div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 text-center">
+                            <div class="section-title">
+                                <h1>Your Products</h1>
+                                <p>There is the list of all electric cars you have, Add more cars to show it for
+                                    clients </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- single product -->
+                        {% for product in products %}
+
+                            <div class="col-lg-3 col-md-6 ">
+                                <div class="shadow">
+                                    <div class="single-product p-3">
+                                        <img class="img-fluid" src="{{ product.photo.url }}" alt=""
+                                             style="max-height: 200px ; min-height: 200px">
+                                        <div class="product-details">
+                                            <h6>{{ product.name }}-{{ product.model }} {{ product.manufacturing_year }}</h6>
+                                            <div class="price">
+                                                <h6>$ {{ product.price }}</h6>
+                                            </div>
+                                            <div class="prd-bottom d-flex">
+                                                <a href="{% url 'updateproduct2' product.id %}"
+                                                   class="btn btn-info ml-1">
+                                                    <span class="lnr lnr-home"></span>
+                                                    View more
+                                                </a>
+                                                <a href="{% url 'deleteproduct' product.id %}"
+                                                   class="btn btn-danger ml-2">
+                                                    <span class="lnr lnr-cross"></span>
+                                                    Delete
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+
+    {% elif request.user.is_staff == False %}
+        <!-- Start banner Area -->
+        <section class="banner-area">
+            <div class="container">
+                <div class="row fullscreen align-items-center justify-content-start">
+                    <div class="col-lg-12">
+                        <div class="">
+                            <!-- single-slide -->
+                            <div class="row single-slide align-items-center d-flex">
+                                <div class="col-lg-5 col-md-6">
+                                    <div class="banner-content">
+                                        <h1>All Models of Electric cars in one website now...</h1>
+                                        <h2> Find the cars Here</h2>
+                                        <p>The First e-commerce website that contains all electric car in one place and
+                                            make
+                                            connection between the clients and the companies and more
+                                            things you will find it here </p>
+                                        <div class="add-bag d-flex align-items-center">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-7">
+                                    <div class="banner-img">
+                                        <img class="img-fluid" src="{% static 'img/banner/banner.png' %}" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End banner Area -->
+
+
+        <!-- start features Area -->
+        <section class="features-area section_gap">
+            <div class="container">
+                <div class="row features-inner">
+                    <!-- single features -->
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-features">
+                            <div class="f-icon">
+                                <img src="{% static "img/features/f-icon1.png" %}" alt="">
+                            </div>
+                            <h6>Free Delivery</h6>
+                            <p>Free Deliver for You</p>
+                        </div>
+                    </div>
+                    <!-- single features -->
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-features">
+                            <div class="f-icon">
+                                <img src="{% static "img/features/f-icon2.png" %}" alt="">
+                            </div>
+                            <h6>Return Policy</h6>
+                            <p>Free Shipping on all order</p>
+                        </div>
+                    </div>
+                    <!-- single features -->
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-features">
+                            <div class="f-icon">
+                                <img src="{% static "img/features/f-icon3.png" %}" alt="">
+                            </div>
+                            <h6>24/7 Support</h6>
+                            <p>Free Shipping on all order</p>
+                        </div>
+                    </div>
+                    <!-- single features -->
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-features">
+                            <div class="f-icon">
+                                <img src="{% static "img/features/f-icon4.png" %}" alt="">
+                            </div>
+                            <h6>Secure Payment</h6>
+                            <p>Free Shipping on all order</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end features Area -->
+
+
+        <!-- start product Area -->
+        <section class="">
+        <!-- single product slide -->
+        <div class="single-product-slider">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 text-center">
+                        <div class="section-title">
+                            <h1>Electric Cars Advantages</h1>
+                            <p>There is some advantages of electric cars </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <center>
+                        <div style="margin-top: 50px;" class="container">
+                            <div class="row">
+                                <div class="col-lg-4 border-right">
+                                    <img src="https://previews.123rf.com/images/kowition/kowition1601/kowition160100075/50857427-environment-let-s-save-the-world-together.jpg"
+                                         class="bd-placeholder-img rounded-circle" width="140" height="140"
+                                         xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
+                                         focusable="false" role="img"><title>Placeholder</title>
+                                    <rect width="100%" height="100%" fill="#777"></rect>
+                                    <text x="50%" y="50%" fill="#777" dy=".3em"></text>
+                                    <div style="max-height: 100px ; min-height: 100px">
+
+                                        <h2>Environmentally friendly</h2>
+                                    </div>
+                                    <p>Ozone hole and most of the climatic and environmental problems due to pollution
+                                        and the main reasons for exhaust gases are cars that run on fuel. Preserve trees
+                                        and environment through electric vehiclesز</p>
+                                </div>
+                                <div class="col-lg-4 border-right">
+                                    <img src="https://static.thenounproject.com/png/1294169-200.png"
+                                         class="bd-placeholder-img rounded" width="140" height="140"
+                                         xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
+                                         focusable="false" role="img" aria-label="Placeholder: 140x140"><title>
+                                    Placeholder</title>
+                                    <rect width="100%" height="100%" fill="#777"></rect>
+                                    <text x="50%" y="50%" fill="#777" dy=".3em"></text>
+                                    </svg>
+                                    <div style="max-height: 100px ; min-height: 100px">
+                                        <h2>Not harmful to health</h2>
+                                    </div>
+                                    <p> Protect your health and the health of your family and people around you through
+                                        electric cars because they do not exhaust any exhaust gases such as cars that
+                                        run on fuel, which affects positively on the lives of people</p>
+                                </div>
+                                <div class="col-lg-4 ">
+                                    <img src="https://www.thbs.com/images/THBS_Images/new/industries/automotive/thbs-utilities-auto-travel-1.png"
+                                         class="bd-placeholder-img rounded" width="140" height="140"
+                                         xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
+                                         focusable="false" role="img" aria-label="Placeholder: 140x140"><title>
+                                    Placeholder</title>
+                                    <rect width="100%" height="100%" fill="#777"></rect>
+                                    <text x="50%" y="50%" fill="#777" dy=".3em"></text>
+                                    </svg>
+                                    <div style="max-height: 100px ; min-height: 100px">
+
+
+                                        <h2>modern features</h2>
+                                    </div>
+                                    <p>Enjoy the many modern and contemporary features such as self-driving, Wi-Fi,
+                                        Bluetooth and Internet access through these cars,also to reducing the cost of
+                                        maintenance and availability of fuel expenses and suitable for cities.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </center>
+                </div>
+            </div>
+        </div>
+
+    {% endif %}
+</section>
+    {#</div>#}
+{% endblock %}

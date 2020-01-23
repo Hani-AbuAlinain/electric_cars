@@ -1,0 +1,135 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {#        {% for product in products %}#}
+    {##}
+    {#            <div class="card mb-3 ml-5" style="max-width: 840px;">#}
+    {#                <div class="row no-gutters">#}
+    {#                    <div class="col-md-4">#}
+    {#                        <img src="{{ product.photo.url }}" class="card-img" alt="...">#}
+    {#                    </div>#}
+    {#                    <div class="col-md-8">#}
+    {#                        <div class="card-body">#}
+    {#                            <h5 class="card-title">{{ product.name }}</h5><hr/>#}
+    {#                            <p class="card-text">{{ product.model }}</p>#}
+    {#                            <p class="card-text">{{ product.price }}</p>#}
+    {#                            <p class="card-text">{{ product.max_speed }}</p>#}
+    {#                            <p class="card-text">{{ product.color }}</p>#}
+    {#                            <p class="card-text">{{ product.km_per_charge }}</p>#}
+    {#                            <p class="card-text">{{ product.manufacturing_year }}</p>#}
+    {##}
+    {#                            <p class="card-text">{{ product.description }}</p>#}
+    {#                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>#}
+    {#                        </div>#}
+    {#                             <a href="{% url 'productDetails' product.id %}" class="btn btn-primary ml-3 mb-2"> view </a>#}
+    {#                             <a href="" class="btn btn-success ml-3 mb-2"> wish list </a>#}
+    {##}
+    {#                    </div>#}
+    {#                </div>#}
+    {#            </div>#}
+    {##}
+    {#        {% endfor %}#}
+
+
+
+
+
+
+
+    {#    ------------------------------------------------------------------------------------- #}
+
+    <!-- Start Banner Area -->
+    <section class="banner-area organic-breadcrumb">
+        <div class="container">
+            <div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
+                <div class="col-first">
+                    <h1>Products page</h1>
+                    <nav class="d-flex align-items-center">
+                        <a href="{% url 'index' %}">Home<span class="lnr lnr-arrow-right"></span></a>
+                        <a href="#">Shop<span class="lnr lnr-arrow-right"></span></a>
+                        <a href="#">{{ company.username }} Products</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Banner Area -->
+    <div class="container">
+        <div class="row">
+            {#            <div class="col-xl-3 col-lg-4 col-md-5">#}
+            {#            </div>#}
+            <div class="col-xl-12 col-lg-11 col-md-10">
+                <!-- Start Filter Bar -->
+                <div class="filter-bar d-flex flex-wrp align-items-center">
+{#                    <div class="sorting">#}
+{##}
+{#                    </div>#}
+{#                    <div class="sorting mr-auto">#}
+{##}
+{#                    </div>#}
+                    <div class="pagination text-center">
+
+{#                            <ul class="pagination">#}
+
+                                {% if products.has_previous %}
+                                    <li><a href="?page={{ products.previous_page_number }}" class="bg-primary" >&laquo;</a></li>
+                                {% else %}
+                                    <li class="disabled bg-primary"><span>&laquo;</span></li>
+                                {% endif %}
+
+
+                                {% for i in products.paginator.page_range %}
+                                    {% if products.number == i %}
+                                        <li class="active bg-dark p-2"><span>{{ i }} <span class="sr-only">(current)</span></span>
+                                        </li>
+                                    {% else %}
+                                        <li><a href="?page={{ i }}">{{ i }}</a></li>
+                                    {% endif %}
+                                {% endfor %}
+
+
+                                {% if products.has_next %}
+                                    <li><a href="?page={{ products.next_page_number }}" class="bg-primary ">&raquo;</a></li>
+                                {% else %}
+                                    <li class="disabled bg-primary p-2"><span>&raquo;</span></li>
+                                {% endif %}
+{#                            </ul>#}
+
+                    </div>
+                </div>
+                <!-- End Filter Bar -->
+                <!-- Start Best Seller -->
+                <section class="lattest-product-area pb-40 category-list">
+                    <div class="row">
+                        {% for product in products %}
+                            <!-- single product -->
+                            <div class="col-lg-3 col-md-6">
+                                <div class="single-product shadow">
+                                    <img class="img-fluid" src="{{ product.photo.url }}" alt=""
+                                         style="min-height: 200px; max-height: 200px">
+                                    <div class="product-details p-3">
+                                        <h6>{{ product.name }}
+                                            - {{ product.model }} {{ product.manufacturing_year }}</h6>
+                                        <div class="price">
+                                            <h6>$ {{ product.price }}</h6>
+                                            <h6 class="l-through"></h6>
+                                        </div>
+                                        <div class="prd-bottom text-center">
+                                            <a href="{% url 'product_details' product.pk %}" class="btn btn-info">
+                                                <span class="lnr lnr-eye"></span>
+                                                view more
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </section>
+                <!-- End Best Seller -->
+
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

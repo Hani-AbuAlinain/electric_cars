@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a2f567a2-a7bc-4488-8712-f755ff8e0615" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/a5c5c02d-fbc2-4f60-a295-2a7b9f79a3e5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/electric_cars.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/context_processor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/help_functions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/migrations/0002_auto_20200107_1049.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/migrations/0003_auto_20200112_0659.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/migrations/0004_auto_20200112_0937.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/migrations/0005_auto_20200114_1531.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/migrations/0006_auto_20200115_1212.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/_DS_Store" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/css/_DS_Store" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/css/normalize.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/fonts/_DS_Store" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/js/_DS_Store" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/js/custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/js/jquery-1.11.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/js/jquery.nav.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/syntax-highlighter/_DS_Store" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/syntax-highlighter/scripts/shAutoloader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/syntax-highlighter/scripts/shBrushAS3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/syntax-highlighter/scripts/shBrushAppleScript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/syntax-highlighter/scripts/shBrushBash.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/syntax-highlighter/scripts/shBrushCSharp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/syntax-highlighter/scripts/shBrushColdFusion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/syntax-highlighter/scripts/shBrushCpp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/syntax-highlighter/scripts/shBrushCss.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/syntax-highlighter/scripts/shBrushDelphi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/syntax-highlighter/scripts/shBrushDiff.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/syntax-highlighter/scripts/shBrushErlang.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/syntax-highlighter/scripts/shBrushGroovy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/syntax-highlighter/scripts/shBrushJScript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/syntax-highlighter/scripts/shBrushJava.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/syntax-highlighter/scripts/shBrushJavaFX.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/syntax-highlighter/scripts/shBrushPerl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/syntax-highlighter/scripts/shBrushPhp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/syntax-highlighter/scripts/shBrushPlain.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/syntax-highlighter/scripts/shBrushPowerShell.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/syntax-highlighter/scripts/shBrushPython.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/syntax-highlighter/scripts/shBrushRuby.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/syntax-highlighter/scripts/shBrushSass.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/syntax-highlighter/scripts/shBrushScala.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/syntax-highlighter/scripts/shBrushSql.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/syntax-highlighter/scripts/shBrushVb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/syntax-highlighter/scripts/shBrushXml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/syntax-highlighter/scripts/shCore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/syntax-highlighter/scripts/shLegacy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/syntax-highlighter/styles/shCore.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/syntax-highlighter/styles/shCoreDefault.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/syntax-highlighter/styles/shCoreDjango.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/syntax-highlighter/styles/shCoreEclipse.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/syntax-highlighter/styles/shCoreEmacs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/syntax-highlighter/styles/shCoreFadeToGrey.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/syntax-highlighter/styles/shCoreMDUltra.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/syntax-highlighter/styles/shCoreMidnight.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/syntax-highlighter/styles/shCoreRDark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/syntax-highlighter/styles/shThemeDefault.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/syntax-highlighter/styles/shThemeDjango.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/syntax-highlighter/styles/shThemeEclipse.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/syntax-highlighter/styles/shThemeEmacs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/syntax-highlighter/styles/shThemeFadeToGrey.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/syntax-highlighter/styles/shThemeMDUltra.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/syntax-highlighter/styles/shThemeMidnight.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/Karma Shop-doc/syntax-highlighter/styles/shThemeRDark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/css/availability-calendar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/css/bootstrap.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/css/ion.rangeSlider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/css/ion.rangeSlider.skinFlat.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/css/jquerysctipttop.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/css/linearicons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/css/magnific-popup.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/css/main.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/css/main.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/css/nice-select.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/css/nouislider.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/css/owl.carousel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/css/themify-icons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/fonts/Linearicons-Free.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/fonts/Linearicons-Free.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/fonts/Linearicons-Free.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/fonts/Linearicons-Free.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/fonts/Linearicons-Free.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/fonts/themify.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/fonts/themify.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/fonts/themify.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/fonts/themify.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/banner/banner-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/banner/banner-img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/banner/banner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/banner/common-banner.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/banner/next.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/banner/prev.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/blog/add.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/blog/author.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/blog/c1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/blog/c2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/blog/c3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/blog/c4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/blog/c5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/blog/c6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/blog/cat-post/cat-post-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/blog/cat-post/cat-post-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/blog/cat-post/cat-post-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/blog/causes/causes-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/blog/causes/causes-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/blog/causes/causes-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/blog/feature-img1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/blog/latest-post/l-post-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/blog/latest-post/l-post-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/blog/latest-post/l-post-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/blog/latest-post/l-post-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/blog/main-blog/m-blog-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/blog/main-blog/m-blog-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/blog/main-blog/m-blog-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/blog/main-blog/m-blog-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/blog/main-blog/m-blog-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/blog/next.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/blog/popular-post/post1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/blog/popular-post/post2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/blog/popular-post/post3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/blog/popular-post/post4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/blog/post-img1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/blog/post-img2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/blog/prev.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/brand/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/brand/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/brand/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/brand/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/brand/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/brand/BMW.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/brand/Hyundai_KONA-EV.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/brand/hyundai.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/brand/kia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/brand/login2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/brand/logo3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/brand/mercedes.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/brand/nissan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/brand/tesla.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/cart.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/category/c1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/category/c2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/category/c3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/category/c4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/category/c5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/category/s-p1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/elements/d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/elements/disabled-check.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/elements/disabled-radio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/elements/f1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/elements/f2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/elements/f3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/elements/f4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/elements/f5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/elements/f6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/elements/f7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/elements/f8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/elements/g1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/elements/g2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/elements/g3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/elements/g4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/elements/g5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/elements/g6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/elements/g7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/elements/g8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/elements/primary-check.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/elements/primary-radio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/elements/success-check.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/elements/success-radio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/exclusive.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/fav.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/features/f-icon1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/features/f-icon2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/features/f-icon3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/features/f-icon4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/logo1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/logo2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/b1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/b2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/b3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/b4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/c1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/c2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/c3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/c4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/cd-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/cd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/ci1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/ci2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/ci3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/f1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/f2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/f3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/f4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/m1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/mp1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/mp10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/mp11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/mp12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/mp2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/mp3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/mp4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/mp5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/mp6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/mp7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/mp8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/mp9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/ob1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/ob2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/ob3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/p1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/p2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/p3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/p4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/p5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/p6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/p7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/p8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/pl1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/pl2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/pl3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/pl4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/pl5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/pl6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/pl7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/pl8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/pm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/q1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/u1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/u2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/organic-food/u3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/product/card.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/product/e-p1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/product/next.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/product/p1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/product/p2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/product/p3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/product/p4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/product/p5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/product/p6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/product/p7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/product/p8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/product/prev.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/product/review-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/product/review-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/product/review-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/sd/c1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/sd/c2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/sd/c3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/sd/c4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/sd/c5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/staffBG.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/js/countdown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/js/gmaps.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/js/ion.rangeSlider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/js/jquery.ajaxchimp.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/js/jquery.magnific-popup.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/js/jquery.nice-select.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/js/jquery.sticky.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/js/nouislider.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/js/owl.carousel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/js/parallax.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/js/vendor/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/js/vendor/jquery-2.2.4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/js/vendor/popper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/scss/main.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/scss/theme/_banner.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/scss/theme/_blog.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/scss/theme/_common.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/scss/theme/_contact.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/scss/theme/_elements.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/scss/theme/_footer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/scss/theme/_header.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/scss/theme/_home.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/scss/theme/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/scss/theme/_predefine.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/scss/theme/_product.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/scss/theme/_reset.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/scss/theme/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/add_product_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/cardline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/cart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/conact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/product_details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/products.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/purchase.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/registercompany.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/update_product.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/user.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/wishlist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templatetags/app_extras.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/electric_cars/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/electric_cars/asgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/electric_cars/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/electric_cars/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/electric_cars/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/2012-Nissan-LEAF.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/2012-Nissan-LEAF_mKUKYLI.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/2018_Nissan_Leaf.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/2018_Nissan_Leaf_p7vzwSI.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/Hyundai-IONIQ.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/Hyundai-IONIQ_PIOk4Qu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/Hyundai-IONIQ_S3OxgtH.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/Hyundai_KONA-EV.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/India.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/India_25F49k8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/India_ILvwmmX.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/India_YwakFsb.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/India_eNP57CQ.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/India_l4MBayn.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/India_rMY2rcb.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/LEAF_NISMO_RC.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/bmw.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/bmw_Cv2fdi4.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/bmw_SQjRzK0.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/bmw_UtEqS58.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/bmw_xLfKLsO.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/i5.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/i5_0jvp6J1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/i5_8jh6Uqg.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/i5_BFoCpv6.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/i5_ZdqPwx4.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/staffBG.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/staffBG_31ggBbC.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/staffBG_uPqNyLm.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/test.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/test_kaky3V5.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/test_qMWRTDf.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/toyota.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/toyota_7kRkjtJ.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/toyota_p1VL4Hd.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_Qmv7s5V.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/toyota.jpg" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db.sqlite3" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db.sqlite3" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db.sqlite3" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1VyvspNIGdUtJCYGtGHfhnQ2aNM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="sqlite" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/static" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/statics/image" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/static" />
+      <recent name="$PROJECT_DIR$/app/statics" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Django server.electric_cars">
+    <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="electric_cars" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="models" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="electric_cars" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/models.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="electric_cars" type="Python.DjangoServer" factoryName="Django server">
+      <module name="electric_cars" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="electric_cars.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.models" />
+        <item itemvalue="Python.manage" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:db.sqlite3" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:db.sqlite3" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@4896bd16" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:db.sqlite3" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@7757ec61" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:db.sqlite3" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@421dbbd3" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a2f567a2-a7bc-4488-8712-f755ff8e0615" name="Default Changelist" comment="" />
+      <created>1578238358951</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578238358951</updated>
+      <workItem from="1578238360110" duration="77712000" />
+      <workItem from="1578555364095" duration="266196000" />
+      <workItem from="1579678439891" duration="56438000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="451" y="210" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578832856442">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="451" y="210" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1578832856442" />
+    <state x="345" y="141" width="1267" height="729" key="#xdebugger.evaluate" timestamp="1579446919154">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="345" y="141" width="1267" height="729" key="#xdebugger.evaluate/67.27.1853.1053@67.27.1853.1053" timestamp="1579446919154" />
+    <state x="528" y="146" width="921" height="812" key="CommitChangelistDialog2" timestamp="1579686942007">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="528" y="146" width="921" height="812" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1579686942007" />
+    <state x="634" y="306" width="424" height="484" key="FileChooserDialogImpl" timestamp="1579530437854">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="634" y="306" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1579530437854" />
+    <state width="1807" height="192" key="GridCell.Tab.0.bottom" timestamp="1579785491680">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="192" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1579785491680" />
+    <state width="1807" height="192" key="GridCell.Tab.0.center" timestamp="1579785491680">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="192" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1579785491680" />
+    <state width="1807" height="192" key="GridCell.Tab.0.left" timestamp="1579785491680">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="192" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1579785491680" />
+    <state width="1807" height="192" key="GridCell.Tab.0.right" timestamp="1579785491680">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="192" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1579785491680" />
+    <state width="1807" height="192" key="GridCell.Tab.1.bottom" timestamp="1579785491769">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="192" key="GridCell.Tab.1.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1579785491769" />
+    <state width="1807" height="192" key="GridCell.Tab.1.center" timestamp="1579785491768">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="192" key="GridCell.Tab.1.center/67.27.1853.1053@67.27.1853.1053" timestamp="1579785491768" />
+    <state width="1807" height="192" key="GridCell.Tab.1.left" timestamp="1579785491767">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="192" key="GridCell.Tab.1.left/67.27.1853.1053@67.27.1853.1053" timestamp="1579785491767" />
+    <state width="1807" height="192" key="GridCell.Tab.1.right" timestamp="1579785491769">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="192" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1579785491769" />
+    <state width="263" height="500" key="HiddenNamespacesPopup" timestamp="1578832865988">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="263" height="500" key="HiddenNamespacesPopup/67.27.1853.1053@67.27.1853.1053" timestamp="1578832865988" />
+    <state x="709" y="265" width="559" height="574" key="RollbackChangesDialog" timestamp="1579686867347">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="709" y="265" width="559" height="574" key="RollbackChangesDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1579686867347" />
+    <state x="482" y="187" key="SettingsEditor" timestamp="1578389537319">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="482" y="187" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1578389537319" />
+    <state x="722" y="286" width="639" height="524" key="StructurePopup" timestamp="1578388706547">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="722" y="286" width="639" height="524" key="StructurePopup/67.27.1853.1053@67.27.1853.1053" timestamp="1578388706547" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1579530081855">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/67.27.1853.1053@67.27.1853.1053" timestamp="1579530081855" />
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1579617363163">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1579617363163" />
+    <state width="926" height="527" key="XDebugger.FullValuePopup" timestamp="1579076484311">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="926" height="527" key="XDebugger.FullValuePopup/67.27.1853.1053@67.27.1853.1053" timestamp="1579076484311" />
+    <state x="726" y="360" width="524" height="384" key="com.intellij.database.dbimport.ImportUtil.MyDialog" timestamp="1579687121632">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="726" y="360" width="524" height="384" key="com.intellij.database.dbimport.ImportUtil.MyDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1579687121632" />
+    <state x="640" y="149" width="863" height="807" key="find.popup" timestamp="1579617403939">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="640" y="149" width="863" height="807" key="find.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1579617403939" />
+    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1579706853372">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1579706853372" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="django-line">
+          <url>file://$PROJECT_DIR$/app/templates/cardline.html</url>
+          <line>18</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/electric_cars$manage.coverage" NAME="manage Coverage Results" MODIFIED="1578389500852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/electric_cars$models.coverage" NAME="models Coverage Results" MODIFIED="1579426235467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
+  </component>
+</project>

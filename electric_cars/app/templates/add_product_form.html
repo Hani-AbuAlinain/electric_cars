@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <!-- Start Banner Area -->
+    <section class="banner-area organic-breadcrumb">
+        <div class="container">
+            <div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
+                <div class="col-first">
+                    <h1>Add Product</h1>
+                    <nav class="d-flex align-items-center">
+                        <a href="{% url 'index' %}">Home<span class="lnr lnr-arrow-right"></span></a>
+                        <a href="">Add Product</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Banner Area -->
+
+        <div class="container mt-5 pl-5 pr-5 ">
+            <div class="row">
+                <div class="col-sm-3"></div>
+
+                <div class="col-sm-6 ">
+                    <div class="card text-center shadow-lg">
+                        <div class="card-header p-3"><h2>Add Product</h2></div>
+                        <div class="card-body">
+                            <form action="" method="POST" enctype="multipart/form-data" class="uni-form">
+                                {% csrf_token %}
+                                <div class="form-group">
+                                    {% crispy form %}
+                                    <button class="btn btn-primary ">Add</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3"></div>
+            </div>
+        </div>
+
+{% endblock %}

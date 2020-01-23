@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+    {#    <form class="mt-5" action="" method="POST" class="">#}
+    {#        <h1>Sign up !!!</h1>#}
+    {#        <div class="form-group">#}
+    {#            {% csrf_token %}#}
+    {#            {{ form.as_p }}#}
+    {#            {% crispy form %}#}
+    {#            <button type="submit" class="btn btn-danger">Register</button>#}
+    {##}
+    {#        </div>#}
+    {##}
+    {##}
+    {#    </form>#}
+
+
+
+    <!-- Start Banner Area -->
+    <section class="banner-area organic-breadcrumb">
+        <div class="container">
+            <div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
+                <div class="col-first">
+                    <h1>Register</h1>
+                    <nav class="d-flex align-items-center">
+                        <a href="{% url 'index' %}">Home<span class="lnr lnr-arrow-right"></span></a>
+                        <a href="">Register</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Banner Area -->
+
+
+    <section class="login_box_area section_gap">
+        <div class="container mb-5 pl-5 pr-5 ">
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-lg-8">
+                    <div class="card"><!--login_form_inner-->
+                        <div class="card-header"><h1 class="text-center mt-3"> Register your information </h1></div>
+                        <form class="row p-5 " action="" method="POST" id="contactForm">
+                            <div class="col-md-12 form-group mb-5">
+                                {% csrf_token %}
+                                {% crispy form %}
+                                <button type="submit" class="btn btn-primary mt-3"> Sign Up</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
