@@ -2,29 +2,6 @@
 
 {% block content %}
 
-{#        <h1>#}
-{#            {{ cart.get_status_display }}#}
-{#        </h1>#}
-
-{#        {% for cart_line in cart.cartline_set.all %}#}
-{#            <tr>#}
-{#                <td>{{ cart_line.product.name }}</td>#}
-{#                <td>{{ cart_line.product.model }}</td>#}
-{#                <td>{{ cart_line.product.price }} Jd</td>#}
-{#                <td>{{ cart_line.product.color }}</td>#}
-{#                <td>{{ cart_line.product.manufacturing_year }}</td>#}
-{#                <td>{{ cart_line.quantity }}</td>#}
-{#                <td>#}
-{#                    <button class="btn btn-danger">Delete</button>#}
-{#                </td>#}
-{##}
-{#            </tr>#}
-{#        {% endfor %}#}
-
-
-
-
-    {#    -------------------------------------------------------------         #}
 
     <!-- Start Banner Area -->
     <section class="banner-area organic-breadcrumb">
@@ -51,10 +28,10 @@
                         <thead>
                         <tr>
                             <th scope="col">Product</th>
-                            <th scope="col">Price</th>
+                            <th scope="col">Price for single product</th>
                             <th scope="col">Quantity</th>
                             <th scope="col">Total</th>
-                            <th scope="col">Action</th>
+{#                            <th scope="col">Action</th>#}
 
                         </tr>
                         </thead>
@@ -72,7 +49,7 @@
                                     </div>
                                 </td>
                                 <td>
-                                    <h5>{{ cart_line.product.price }}</h5>
+                                    <h5>$ {{ cart_line.product.price }}</h5>
                                 </td>
                                 <td>
                                     <div class="product_count">
@@ -82,36 +59,15 @@
                                     </div>
                                 </td>
                                 <td>
-                                    <h5>$Toatal</h5>
+                                    <h5>$ {{ cart_line.get_sum_price }}</h5>
                                 </td>
                                 <td>
-                                    <h5><button class="btn btn-danger mr-3">Delete</button></h5>
+{#                                    <h5>#}
+{#                                        <a class="btn btn-danger mr-3" href="{% url 'deletecartline' cartline.id %}">Delete</a>#}
+{#                                    </h5>#}
                                 </td>
                             </tr>
                         {% endfor %}
-{#                        <tr class="bottom_button">#}
-{#                            <td>#}
-{#                                <a class="gray_btn" href="#">Update Cart</a>#}
-{#                            </td>#}
-{#                            <td>#}
-{##}
-{#                            </td>#}
-{#                            <td>#}
-{##}
-{#                            </td>#}
-{#                            <td>#}
-{##}
-{#                            </td>#}
-{##}
-{#                            <td>#}
-{#                                <div class="cupon_text d-flex align-items-center">#}
-{#                                    <input type="text" placeholder="Coupon Code">#}
-{#                                    <a class="primary-btn" href="#">Apply</a>#}
-{#                                    <a class="gray_btn" href="#">Close Coupon</a>#}
-{#                                </div>#}
-{#                            </td>#}
-{##}
-{#                        </tr>#}
                         <tr>
                             <td>
 
@@ -120,13 +76,13 @@
 
                             </td>
                             <td>
-
+                                <h3>Final price:</h3>
+                            </td>
+                            <td>
+                               <h4 class="text-success">$ {{ cart.get_sum }} </h4>
                             </td>
 {#                            <td>#}
-{#                                <h5>Subtotal</h5>#}
-{#                            </td>#}
-{#                            <td>#}
-{#                                <h5>$2160.00</h5>#}
+{##}
 {#                            </td>#}
                         </tr>
                         <tr class="out_button_area">
@@ -137,20 +93,23 @@
 
                             </td>
                             <td>
-
                             </td>
-                            <td>
+                                <td>
 
-                            </td>
+                                </td>
                             <td>
                                 <div class="checkout_btn_inner d-flex align-items-center">
-{#                                    <a class="gray_btn" href="#">Continue Shopping</a>#}
+                                    {#                                    <a class="gray_btn" href="#">Continue Shopping</a>#}
                                     <a class="primary-btn" href="{% url 'purchaseproduct' %}">Proceed to checkout</a>
                                 </div>
                             </td>
                         </tr>
                         </tbody>
                     </table>
+                    <div class="row">
+                        <div class="col-9"></div>
+                        <div class="col-3"><label class="col-form-label"></label></div>
+                    </div>
                 </div>
             </div>
         </div>

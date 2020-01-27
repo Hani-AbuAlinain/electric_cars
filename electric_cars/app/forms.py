@@ -1,7 +1,7 @@
 from django import forms
-from django.contrib.auth.forms import UserCreationForm, UsernameField
+from django.contrib.auth.forms import UserCreationForm
 
-from .models import UserProfile, Product, Payment
+from .models import UserProfile, Product
 from . import models
 
 
@@ -13,20 +13,10 @@ class UserRegister(UserCreationForm):
                   'is_staff']
 
 
-
 class UserLogin(UserCreationForm):
     class Meta:
         model = UserProfile
         fields = {'email', 'password'}
-
-
-#
-# class Payment(forms.Form):
-#     visa_card_no = forms.IntegerField()
-#     region = forms.CharField()
-#     postal_code = forms.IntegerField()
-#     city = forms.CharField()
-#     tax_registration_number = forms.IntegerField()
 
 
 class AddProduct(forms.ModelForm):

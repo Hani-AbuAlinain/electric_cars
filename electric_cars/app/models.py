@@ -1,12 +1,8 @@
-from django.contrib.auth.base_user import BaseUserManager
-from django.contrib.auth.models import AbstractUser, UserManager
-from django.contrib.auth.validators import UnicodeUsernameValidator
+from django.contrib.auth.models import AbstractUser
 from django.db import models
 
 
 # Create your models here.
-from django.urls import reverse
-from django.utils import timezone
 
 
 
@@ -26,7 +22,6 @@ class UserProfile(AbstractUser):
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['username', 'phone', 'country']
-    # username = 'email'
 
 
 class Product(models.Model):
@@ -43,18 +38,6 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
-
-    # def get_absolute_url(self):
-    #     return reverse('updateproduct2', kwargs={'id': self.id})
-
-#
-# def upload_to(instance, filename):
-#     filename_base, filename_ext = os.path.splitext(filename)
-#     return "{project}/{filename}{extension}".format(
-#         project=slugify(instance.project.title),
-#         filename=slugify(filename_base),
-#         extension=filename_ext.lower(),
-#     )
 
 
 class Payment(models.Model):
@@ -81,6 +64,12 @@ class Cart(models.Model):
     user = models.ForeignKey('UserProfile', on_delete=models.CASCADE, null=True)
     status = models.CharField(max_length=10, choices=status, null=True)
 
+    def get_sum(self):
+        total = 0
+        for line in self.cartline_set.all():
+            total += line.get_sum_price()
+        return total
+
     # def __str__(self):
     #     return self.id
 
@@ -96,6 +85,9 @@ class CartLine(models.Model):
     quantity = models.IntegerField()
     product = models.ForeignKey('Product', on_delete=models.CASCADE, null=True)
     cart = models.ForeignKey('Cart', on_delete=models.CASCADE, null=True)
+
+    def get_sum_price(self):
+        return self.quantity * self.product.price
 
     # def __str__(self):
     #     return self.cart_id

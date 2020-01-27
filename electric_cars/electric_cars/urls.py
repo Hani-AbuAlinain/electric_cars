@@ -17,21 +17,16 @@ from django.conf import settings
 from django.contrib import admin
 from django.urls import path, include
 
-# from django.contrib.staticfiles.urls import static
 from django.conf.urls.static import static
-
-from django.contrib.staticfiles.urls import staticfiles_urlpatterns
-
 
 from app import views
 
 urlpatterns = [
-    path('', views.index, name='index'),
+    path('', views.IndexView.as_view, name='index'),
     path('admin/', admin.site.urls),
     path('app/', include('app.urls'))
 
 ]
-# + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

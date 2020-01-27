@@ -1,4 +1,4 @@
-from .models import Cart, UserProfile
+from .models import UserProfile
 from .views import get_user_cart
 
 

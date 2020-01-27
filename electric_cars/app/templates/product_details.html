@@ -3,102 +3,6 @@
 {% block content %}
 
 
-    {#    <div class="row">#}
-    {#        <div class="col-2"></div>#}
-    {##}
-    {#        <div class="col-8">#}
-    {#            <div class="card mb-3 mt-3 ml-4">#}
-    {#                <img src="{{ product.photo.url }}" class="card-img-top" alt="..." height="500" width="75%">#}
-    {#                <div class="card-body">#}
-    {##}
-    {#                    <h5 class="card-title">{{ product.name }}</h5>#}
-    {#                    <p class="card-text">{{ product.model }}</p>#}
-    {#                    <p class="card-text">{{ product.price }}</p>#}
-    {#                    <p class="card-text">{{ product.max_speed }}</p>#}
-    {#                    <p class="card-text">{{ product.color }}</p>#}
-    {#                    <p class="card-text">{{ product.manufacturing_year }}</p>#}
-    {#                    <p class="card-text">{{ product.km_per_charge }}</p>#}
-    {#                    <p class="card-text">{{ product.description }}</p>#}
-    {##}
-    {#                    <form method="POST">#}
-    {#                        <p class="float-right">order item :</p>#}
-    {#                        {% csrf_token %}#}
-    {#                        {{ form.as_p }}#}
-    {#                        <button class="btn btn-success ml-3 mb-2 float-right" type="submit"> Add to cart !!</button>#}
-    {#                    </form>#}
-    {#                    <h3>{{ msg }}</h3>#}
-    {##}
-    {##}
-    {#                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>#}
-    {#                </div>#}
-    {#            </div>#}
-    {#        </div>#}
-    {##}
-    {#        <div class="col-2"></div>#}
-    {##}
-    {#    </div>#}
-
-
-
-{#    <div class="row border-top mt-4">#}
-{#        <div class="col-1"></div>#}
-{#        <div class="col-6 border-right">#}
-{#            <img src="{{ product.photo.url }}" class="card-img-top rounded-circle mt-5 mr-5" alt="..." height="500"#}
-{#                 width="75%">#}
-{#        </div>#}
-{##}
-{#        <div class="col-5">#}
-{#            <div class="bg-primary"><h1#}
-{#                    class="mt-4  font-weight-bold text-center text-secondary display-3 "> {{ product.name }} </h1></div>#}
-{#            <div class="mt-4 ml-4"><p class="font-weight-bold h1"> Model : <label#}
-{#                    class="h2">  {{ product.model }}</label></p></div>#}
-{#            <div class="mt-4 ml-4"><p class="font-weight-bold h1"> Price : <label#}
-{#                    class="h2">  {{ product.price }} </label></p></div>#}
-{#            <div class="mt-4 ml-4"><p class="font-weight-bold h1"> Max Speed : <label#}
-{#                    class="h2">  {{ product.max_speed }} </label></p></div>#}
-{#            <div class="mt-4 ml-4"><p class="font-weight-bold h1"> Color : <label#}
-{#                    class="h2">  {{ product.color }} </label></p></div>#}
-{#            <div class="mt-4 ml-4"><p class="font-weight-bold h1"> Manufacturing Year : <label#}
-{#                    class="h2">  {{ product.manufacturing_year }} </label></p></div>#}
-{#            <div class="mt-4 ml-4"><p class="font-weight-bold h1"> km/charge : <label#}
-{#                    class="h2"> {{ product.km_per_charge }} </label></p></div>#}
-{#            <div class="mt-4 ml-4"><p class="font-weight-bold h1"> Description : <label#}
-{#                    class="h2">  {{ product.description }} </label></p></div>#}
-{#            <hr/>#}
-{#            <form method="POST">#}
-{#                <div class="d-flex"><p class="h4">order item :</p></div>#}
-{#                <div class="d-flex float-right">#}
-{#                    {% csrf_token %}#}
-{#                    {{ form.as_p }}#}
-{#                    <button class="btn btn-success ml-3 mb-2 float-right" type="submit"> Add to cart !!</button>#}
-{#                </div>#}
-{#            </form>#}
-{##}
-{##}
-{#        </div>#}
-{##}
-{##}
-{#    </div>#}
-    {#        <div class="col-1"></div>#}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    {#    -----------------------------------------------------------------------------------------          #}
-
     <!-- Start Banner Area -->
     <section class="banner-area organic-breadcrumb">
         <div class="container">
@@ -146,7 +50,7 @@
                                 {% crispy form %}
                                 <button class="btn btn-success mt-2 ml-1" type="submit"> Add to cart
                                 </button>
-                                <a class="icon_btn mt-2 ml-2" href="#"><i class="lnr lnr lnr-diamond"></i></a>
+                                <a class="icon_btn mt-2 ml-2" href=""><i class="lnr lnr lnr-diamond"></i></a>
                                 <a class="icon_btn mt-2" href="#"><i class="lnr lnr lnr-heart"></i></a>
                             </div>
                         </form>

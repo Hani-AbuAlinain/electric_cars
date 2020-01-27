@@ -1,7 +1,103 @@
 {% extends 'base.html' %}
 
-{% load crispy_forms_tags %}
-
 {% block content %}
-<h1>wishlist page</h1>
+
+
+    <!-- Start Banner Area -->
+    <section class="banner-area organic-breadcrumb">
+        <div class="container">
+            <div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
+                <div class="col-first">
+                    <h1>Shopping Cart</h1>
+                    <nav class="d-flex align-items-center">
+                        <a href="{% url 'index' %}">Home<span class="lnr lnr-arrow-right"></span></a>
+                        <a href="category.html">Cart</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Banner Area -->
+
+    <!--================Cart Area =================-->
+    <section class="cart_area">
+        <div class="container">
+            <div class="cart_inner">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">Product</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">test</th>
+                            <th scope="col">test</th>
+                            <th scope="col">/th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for cart_line in cart.cartline_set.all %}
+                            <tr>
+                                <td>
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <div class="d-flex">
+                                            </div>
+                                            <p>{{ cart_line.product.name }}
+                                                - {{ cart_line.product.model }} {{ cart_line.product.manufacturing_year }}</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <h5>$ {{ cart_line.product.price }}</h5>
+                                </td>
+                                <td>
+                                    <div class="product_count">
+                                        <input type="text" name="qty" id="sst" maxlength="12"
+                                               value="{{ cart_line.quantity }}" title="Quantity:"
+                                               class="input-text qty" readonly>
+                                    </div>
+                                </td>
+                                <td>
+                                    <h5>$ {{ cart_line.get_sum_price }}</h5>
+                                </td>
+                                <td>
+                                    <h5>
+                                        <button class="btn btn-danger mr-3">Delete</button>
+                                    </h5>
+                                </td>
+                            </tr>
+                        {% endfor %}
+
+                        <tr class="out_button_area">
+                            <td>
+
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="row">
+                        <div class="col-9"></div>
+                        <div class="col-3"><label class="col-form-label"></label></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================End Cart Area =================-->
+
+
+
+
 {% endblock %}
