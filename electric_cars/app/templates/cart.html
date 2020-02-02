@@ -31,8 +31,6 @@
                             <th scope="col">Price for single product</th>
                             <th scope="col">Quantity</th>
                             <th scope="col">Total</th>
-{#                            <th scope="col">Action</th>#}
-
                         </tr>
                         </thead>
                         <tbody>
@@ -62,9 +60,6 @@
                                     <h5>$ {{ cart_line.get_sum_price }}</h5>
                                 </td>
                                 <td>
-{#                                    <h5>#}
-{#                                        <a class="btn btn-danger mr-3" href="{% url 'deletecartline' cartline.id %}">Delete</a>#}
-{#                                    </h5>#}
                                 </td>
                             </tr>
                         {% endfor %}
@@ -79,11 +74,8 @@
                                 <h3>Final price:</h3>
                             </td>
                             <td>
-                               <h4 class="text-success">$ {{ cart.get_sum }} </h4>
+                                <h4 class="text-success">$ {{ cart.get_sum }} </h4>
                             </td>
-{#                            <td>#}
-{##}
-{#                            </td>#}
                         </tr>
                         <tr class="out_button_area">
                             <td>
@@ -94,12 +86,11 @@
                             </td>
                             <td>
                             </td>
-                                <td>
+                            <td>
 
-                                </td>
+                            </td>
                             <td>
                                 <div class="checkout_btn_inner d-flex align-items-center">
-                                    {#                                    <a class="gray_btn" href="#">Continue Shopping</a>#}
                                     <a class="primary-btn" href="{% url 'purchaseproduct' %}">Proceed to checkout</a>
                                 </div>
                             </td>

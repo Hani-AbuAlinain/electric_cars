@@ -21,25 +21,16 @@
     <!-- End Banner Area -->
     <div class="container">
         <div class="row">
-            {#            <div class="col-xl-3 col-lg-4 col-md-5">#}
-            {#            </div>#}
             <div class="col-xl-12 col-lg-11 col-md-10">
                 <!-- Start Filter Bar -->
                 <div class="filter-bar d-flex flex-wrp align-items-center">
-{#                    <div class="sorting">#}
-{##}
-{#                    </div>#}
-{#                    <div class="sorting mr-auto">#}
-{##}
-{#                    </div>#}
-                    <div class="pagination text-center">
 
-{#                            <ul class="pagination">#}
+                    <div class="pagination text-center">
 
                                 {% if products.has_previous %}
                                     <li><a href="?page={{ products.previous_page_number }}" class="bg-primary" >&laquo;</a></li>
                                 {% else %}
-                                    <li class="disabled bg-primary"><span>&laquo;</span></li>
+                                    <li class="disabled bg-primary p-2"><span>&laquo;</span></li>
                                 {% endif %}
 
 
@@ -54,15 +45,16 @@
 
 
                                 {% if products.has_next %}
-                                    <li><a href="?page={{ products.next_page_number }}" class="bg-primary ">&raquo;</a></li>
+                                    <li><a href="?page={{ products.next_page_number }}" class="bg-muted ">&raquo;</a></li>
                                 {% else %}
                                     <li class="disabled bg-primary p-2"><span>&raquo;</span></li>
                                 {% endif %}
-{#                            </ul>#}
 
                     </div>
                 </div>
                 <!-- End Filter Bar -->
+
+
                 <!-- Start Best Seller -->
                 <section class="lattest-product-area pb-40 category-list">
                     <div class="row">

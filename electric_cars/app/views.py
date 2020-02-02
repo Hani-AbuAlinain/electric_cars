@@ -23,12 +23,15 @@ from .models import Payment, Cart, Product, UserProfile, CartLine, Wishlist, Wis
 """
 
 
-@method_decorator(login_required, name="dispatch")
+# @method_decorator(login_required, name="dispatch")
 class IndexView(TemplateView):
     template_name = 'index.html'
 
     def get_context_data(self, **kwargs):
-        product = Product.objects.filter(user=self.request.user)
+        if self.request.user.is_authenticated:
+            product = Product.objects.filter(user=self.request.user)
+        else:
+            product = []
         return {'products': product}
 
 
@@ -76,10 +79,16 @@ class Logout(LogoutView):
 ==============================================================  """
 
 
-@login_required()
+# @login_required()
 def products(request, id):
-    product = models.Product.objects.filter(user=id)
-    company = models.UserProfile.objects.get(id=id)
+    if request.user.is_authenticated and request.user.is_staff:
+        product = models.Product.objects.filter(user=id)
+        company = models.UserProfile.objects.get(id=id)
+
+    else:
+        # product = models.Product.objects.all()
+        product = models.Product.objects.filter(user=id)
+        company = None
 
     paginator = Paginator(product, 8)
 
@@ -112,7 +121,6 @@ class ProductDetails(DetailView, CreateView):
         if cart_item.exists():
             kwargs.update({'instance': cart_item.first()})
         return kwargs
-
 
     def form_valid(self, form):
         if form.instance.pk:
@@ -203,7 +211,7 @@ class PurchaseProductView(CreateView, SuccessMessageMixin):
 
 # -----------
 
-
+@method_decorator(login_required, name="dispatch")
 class CartView(DetailView):
     model = Cart
     template_name = 'cart.html'

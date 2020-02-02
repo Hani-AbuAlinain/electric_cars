@@ -1,4 +1,4 @@
-{% load app_extras %}
+{#{% load app_extras %}#}
 {% load static %}
 <!DOCTYPE html>
 <html lang="en" class="no-js">
@@ -68,8 +68,6 @@
                     <ul class="nav navbar-nav menu_nav ml-auto">
                         <li class="nav-item active"><a class="nav-link" href="{% url 'index' %}">Home</a></li>
                         <li class="nav-item submenu dropdown">
-
-                            {% if request.user.is_authenticated %}
                                 {% if request.user.is_staff == False %}
 
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
@@ -85,12 +83,9 @@
 
                                     <li class="nav navbar-nav navbar-right">
                                     <li class="nav-item "><a href="{% url 'cart' %}" class="nav-link"><span class="ti-bag"> Cart</span></a>
-                                    </li>
-                                    <li class="nav-item"><a href="{% url 'wishlist' %}" class="nav-link"><span
-                                            class="ti-heart text-dark"> Wishlist </span></a></li>
-{#                                    </ul>#}
-                                    </li>
                                 {% endif %}
+
+                            {% if request.user.is_authenticated %}
                                 <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}"><span
                                         class=""> Contact </span></a></li>
 
@@ -127,27 +122,27 @@
 <section class="brand-area section_gap">
     <div class="container">
         <div class="row">
-            <a class="col single-img" href="">
+            <a class="col single-img">
                 <img class="img-fluid d-block mx-auto" src="{% static "img/brand/BMW.png" %}" alt=""
                      style="max-height: 150px; min-height: 150px">
             </a>
-            <a class="col single-img" href="">
+            <a class="col single-img">
                 <img class="img-fluid d-block mx-auto" src="{% static "img/brand/tesla.png" %}" alt=""
                      style="max-height: 150px; min-height: 150px">
             </a>
-            <a class="col single-img" href="">
+            <a class="col single-img">
                 <img class="img-fluid d-block mx-auto" src="{% static "img/brand/kia.png" %}" alt=""
                      style="max-height: 150px; min-height: 150px">
             </a>
-            <a class="col single-img" href="">
+            <a class="col single-img">
                 <img class="img-fluid d-block mx-auto" src="{% static "img/brand/mercedes.png" %}" alt=""
                      style="max-height: 150px; min-height: 150px">
             </a>
-            <a class="col single-img" href="">
+            <a class="col single-img">
                 <img class="img-fluid d-block mx-auto" src="{% static "img/brand/hyundai.png" %}" alt=""
                      style="max-height: 150px; min-height: 150px">
             </a>
-            <a class="col single-img" href="#">
+            <a class="col single-img">
                 <img class="img-fluid d-block mx-auto" src="{% static "img/brand/nissan.png" %}" alt=""
                      style="max-height: 150px; min-height: 150px">
             </a>
@@ -190,9 +185,6 @@
                         <li><a href="" class="text-muted h6">Legal</a></li> <br>
                         <li><a href="" class="text-muted h6">Terms & conditions</a></li><br>
                         <li><a href="" class="text-muted h6">Policy & privacy</a></li>
-{#                        <li><a href="">ssss</a></li>#}
-{#                        <li><a href="">ssss</a></li>#}
-{#                        <li><a href="">ssss</a></li>#}
                     </ul>
                 </div>
             </div>
